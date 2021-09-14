@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автоломбард народный</title>
+    <link rel="stylesheet" href="css/libs/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__wrap"><a class="header__logo" href="/">
+            <svg class="header__logo-icon" width="216" height="65"> 
+              <use xlink:href="img/sprites.svg#logo"></use>
+            </svg></a>
+          <nav class="menu">   
+            <ul class="menu__list"> 
+              <li class="menu__item"> <a class="menu__link anchor" href="#conditions">Как получить займ</a></li>
+              <li class="menu__item"> <a class="menu__link anchor" href="#conditions-info">Условия</a></li>
+              <li class="menu__item"> <a class="menu__link anchor" href="#callback">Контакты</a></li>
+            </ul>
+            <button class="btn btn_red header__btn open-modal header__btn_mobile" type="button">Заказать звонок</button>
+          </nav>
+          <ul class="header__social">
+            <li class="header__social-item"><a class="header__social-link" href="tel:84752642020">8 (475) 264-20-20</a></li>
+            <li class="header__social-item"><a class="header__social-link" href="tel:89204820002">8 (920) 482-00-02</a></li>
+          </ul>
+          <button class="btn btn_red header__btn open-modal header__btn_desctop" type="button">Заказать звонок</button>
+          <button class="burger" type="button"><span class="burger__line"></span></button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="intro">
+        <div class="container"> 
+          <div class="intro__wrap"> 
+            <div class="intro__title-wrap"> 
+              <h1 class="intro__title white">Наличные за час</h1>
+            </div>
+            <ul class="intro__advantages"> 
+              <li class="intro__advantages-item">Низкая ставка - от 2%</li>
+              <li class="intro__advantages-item">Любая кредитная история</li>
+              <li class="intro__advantages-item">Досрочное погашение с первого дня</li>
+            </ul>
+            <form class="intro__form" action="#" method="POST">
+              <input class="input intro__input" type="tel" placeholder="Телефон">
+              <button class="btn btn_blue intro__btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="calculator"> 
+        <div class="container"> 
+          <div class="calculator__wrap"> 
+            <h2 class="calculator__title white">Калькулятор ежемесячного платежа </h2>
+            <div class="calculator__main">
+              <div class="calculator__forms">
+                <div class="calculator__area"> 
+                  <ul class="calculator__compute"> 
+                    <li class="calculator__compute-item">
+                      <p class="calculator__compute-description">Сумма займа</p><span class="calculator__compute-value" id="sum">200000</span>
+                      <div class="calculator__compute-input" id="sum-slider"></div>
+                      <div class="calculator__compute-range">
+                        <p class="calculator__compute-range-text">от 20 тыс</p>
+                        <p class="calculator__compute-range-text">до 3 млн</p>
+                      </div>
+                    </li>
+                    <li class="calculator__compute-item">
+                      <p class="calculator__compute-description">Срок займа</p><span class="calculator__compute-value" id="time">12 месяцев</span>
+                      <div class="calculator__compute-input" id="time-slider"></div>
+                      <div class="calculator__compute-range">
+                        <p class="calculator__compute-range-text">от 1 месяца</p>
+                        <p class="calculator__compute-range-text">до 36 месяцев</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="calculator__result">
+                  <li class="calculator__result-item"> 
+                    <p class="calculator__result-description">Ежемесячный платёж</p><span class="calculator__result-value" id="per-mounth">4 000</span>
+                  </li>
+                  <li class="calculator__result-item"> 
+                    <p class="calculator__result-description">Всего вернуть</p><span class="calculator__result-value" id="total-sum">248 000</span>
+                  </li>
+                </ul>
+              </div>
+              <form class="calculator__callback" action="#" method="POST">
+                <fieldset class="calculator__callback-wrap"> 
+                  <legend class="calculator__callback-title">Обратный звонок</legend>
+                  <input class="input calculator__callback-input" type="tel" placeholder="Телефон">
+                  <button class="btn btn_blue calculator__callback-btn" type="submit">Заказать звонок</button>
+                  <p class="calculator__callback-mark">Нажимая кнопку, вы соглашаетесь с<a href="agreement.html">правилами обработки персональных данных</a></p>
+                </fieldset>
+              </form>
+            </div>
+            <article class="calculator__info">
+              <div class="calculator__wrap-img">
+                <div class="calculator__info-img">
+                  <picture> 
+                    <source srcset="img/cash.webp" type="image/webp">
+                    <source srcset="img/cash.png" type="image/png"><img src="img/cash.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <ul class="calculator__info-content"> 
+                <li class="calculator__info-content-item"> 
+                  <h3 class="calculator__info-content-subtitle">Работаем с физическими лицами и юридическими лицами(ИП)</h3>
+                  <p class="calculator__info-content-text">Наша компания предоставляет займы под залог ПТС физическим лицам и юридическим лицам (ИП)</p>
+                </li>
+                <li class="calculator__info-content-item"> 
+                  <h3 class="calculator__info-content-subtitle">Досрочное погашение</h3>
+                  <p class="calculator__info-content-text">Вы можете погасить займ досрочно в любой день, при этом проценты будут начислены строго за срок пользования займом</p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="conditions" id="conditions"> 
+        <div class="container"> 
+          <div class="conditions__wrap"> 
+            <h2 class="conditions__title red">Как получить займ</h2>
+            <ul class="conditions__tags"> 
+              <li class="conditions__tags-item">#быстро</li>
+              <li class="conditions__tags-item">#выгодно</li>
+              <li class="conditions__tags-item">#удобно</li>
+            </ul>
+            <ol class="conditions__list">
+              <li class="conditions__list-item"> 
+                <div class="conditions__list-number"></div>
+                <h3 class="conditions__list-subtitle">Оставить заявку</h3>
+                <p class="conditions__list-text">Принимаем заявки на сайте, офисе и по телефону. Решение о выдаче займа сообщим уже через 15 минут</p>
+              </li>
+              <li class="conditions__list-item"> 
+                <div class="conditions__list-number"></div>
+                <h3 class="conditions__list-subtitle">Договориться о встрече</h3>
+                <p class="conditions__list-text">Наш менеджер может приехать в удобное для Вас место и время, чтобы подписать договор и осмотреть автомобиль. Также вы можете приехать в наш офис самостоятельно</p>
+              </li>
+              <li class="conditions__list-item"> 
+                <div class="conditions__list-number"></div>
+                <h3 class="conditions__list-subtitle">Получить займ</h3>
+                <p class="conditions__list-text">Сразу на месте, Вы получаете свои деньги наличными или переводом на банковскую карту. Авто остается у вас</p>
+              </li>
+            </ol>
+            <form class="conditions__form" action="#" method="POST">
+              <div class="conditions__form-content">
+                <ul class="conditions__form-list"> 
+                  <li class="conditions__form-item"> 
+                    <input class="conditions__form-input input" type="tel" placeholder="Телефон" autocomplete="off">
+                  </li>
+                  <li class="conditions__form-item"> 
+                    <input class="conditions__form-input input" type="text" placeholder="Имя">
+                  </li>
+                </ul>
+                <button class="btn btn_blue conditions__form-btn" type="submit">Оставить заявку</button>
+              </div>
+              <p class="conditions__form-mark">Нажимая кнопку, вы соглашаетесь с<a href="agreement.html">правилами обработки персональных данных</a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="advantages"> 
+        <div class="container"> 
+          <div class="advantages__wrap"> 
+            <h2 class="advantages__title">Почему получение займа доверяют нам</h2>
+            <ul class="advantages__list"> 
+              <li class="advantages__item"> 
+                <div class="advantages__img"> 
+                  <svg class="advantages__icon"> 
+                    <use xlink:href="img/sprites.svg#fast"></use>
+                  </svg>
+                </div>
+                <h3 class="advantages__subtitle">Деньги в день обращения</h3>
+                <p class="advantages__text">Быстро оформим документы — время выдачи займа 45 минут</p>
+              </li>
+              <li class="advantages__item"> 
+                <div class="advantages__img"> 
+                  <svg class="advantages__icon"> 
+                    <use xlink:href="img/sprites.svg#car1"></use>
+                  </svg>
+                </div>
+                <h3 class="advantages__subtitle">Оценка до 95% стоимости автомобиля</h3>
+                <p class="advantages__text">Вы получите наличными или на карту максимальную сумму от рыночной стоимости вашего авто</p>
+              </li>
+              <li class="advantages__item"> 
+                <div class="advantages__img"> 
+                  <svg class="advantages__icon"> 
+                    <use xlink:href="img/sprites.svg#car2"></use>
+                  </svg>
+                </div>
+                <h3 class="advantages__subtitle">Авто остается у Вас</h3>
+                <p class="advantages__text">После получения займа, вы продолжите пользоваться авто</p>
+              </li>
+              <li class="advantages__item"> 
+                <div class="advantages__img"> 
+                  <svg class="advantages__icon"> 
+                    <use xlink:href="img/sprites.svg#file"></use>
+                  </svg>
+                </div>
+                <h3 class="advantages__subtitle">Одобрение по двум документам</h3>
+                <p class="advantages__text">Для одобрения нужно только 2 документа — паспорт и ПТС</p>
+              </li>
+              <li class="advantages__item"> 
+                <div class="advantages__img"> 
+                  <svg class="advantages__icon"> 
+                    <use xlink:href="img/sprites.svg#person"></use>
+                  </svg>
+                </div>
+                <h3 class="advantages__subtitle">Любая кредитная история</h3>
+                <p class="advantages__text">Мы одобрим займы людям даже с испорченной кредитной историей, без поручителей и без справок о доходах</p>
+              </li>
+              <li class="advantages__item"> 
+                <div class="advantages__img"> 
+                  <svg class="advantages__icon"> 
+                    <use xlink:href="img/sprites.svg#debt"></use>
+                  </svg>
+                </div>
+                <h3 class="advantages__subtitle">Досрочное погашение</h3>
+                <p class="advantages__text">Досрочное погашение без моратория или штрафов в любой день, проценты начисляются только за фактический срок займа</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="conditions-info" id="conditions-info">
+        <div class="container"> 
+          <div class="conditions-info__wrap">
+            <h2 class="conditions-info__title white">Условия предоставления займа</h2>
+            <div class="conditions-info__content">
+              <div class="conditions-info__block"> 
+                <h3 class="conditions-info__subtitle">Сумма</h3>
+                <ul class="conditions-info__list"> 
+                  <li class="conditions-info__item">сумма займа от 20 000 ₽</li>
+                  <li class="conditions-info__item">оценка до 95% от стоимости автомобиля</li>
+                  <li class="conditions-info__item">нет дополнительных комиссий или скрытых платежей</li>
+                  <li class="conditions-info__item">автомобиль остается у Вас</li>
+                </ul>
+              </div>
+              <div class="conditions-info__block">
+                <h3 class="conditions-info__subtitle">Срок</h3>
+                <ul class="conditions-info__list"> 
+                  <li class="conditions-info__item">срок займа от 1 до 36 месяцев</li>
+                  <li class="conditions-info__item">погасить займ можно наличными в офисе или переводом на расчетный счёт</li>
+                  <li class="conditions-info__item">досрочное погашение в любой день без моратория и штрафов</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="requirements">
+        <div class="container"> 
+          <div class="requirements__wrap">
+            <h2 class="requirements__title white">Требования</h2>
+            <ul class="requirements__list"> 
+              <li class="requirements__item">
+                <h3 class="requirements__subtitle">Автомобиль</h3>
+                <ul class="requirements__sublist"> 
+                  <li class="requirements__sublist-item">любые марки и модели</li>
+                  <li class="requirements__sublist-item">авто любого года выпуска</li>
+                  <li class="requirements__sublist-item">авто должно быть на ходу</li>
+                  <li class="requirements__sublist-item">авто не заложено, на него не оформлен займ под ПТС</li>
+                </ul>
+              </li>
+              <li class="requirements__item">
+                <h3 class="requirements__subtitle">Заёмщик</h3>
+                <ul class="requirements__sublist"> 
+                  <li class="requirements__sublist-item">гражданство РФ</li>
+                  <li class="requirements__sublist-item">возраст от 21 до 69 лет</li>
+                </ul>
+              </li>
+              <li class="requirements__item">
+                <h3 class="requirements__subtitle">Документы</h3>
+                <ul class="requirements__sublist"> 
+                  <li class="requirements__sublist-item">паспорт</li>
+                  <li class="requirements__sublist-item">ПТС старого или нового образца</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="arrange"> 
+        <div class="container"> 
+          <div class="arrange__wrap"> 
+            <form class="arrange__form" action="#" method="POST">
+              <h3 class="arrange__title">Оформить займ</h3>
+              <fieldset class="arrange__fields"> 
+                <input class="arrange__input input" type="tel" placeholder="Телефон">
+                <input class="arrange__input input" type="text" placeholder="Имя">
+              </fieldset>
+              <div class="arrange__submit">
+                <button class="arrange__btn btn btn_blue" type="submit">Оформить займ</button>
+                <p class="arrange__mark">Нажимая кнопку, вы соглашаетесь с<a href="agreement.html">правилами обработки персональных данных</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="questions"> 
+        <div class="container"> 
+          <div class="questions__wrap"> 
+            <h2 class="questions__title white">Остались вопросы?</h2>
+            <ul class="questions__list"> 
+              <li class="questions__item">
+                <h4 class="questions__item-title">Влияет ли кредитная история на решение о выдаче займа?</h4>
+                <div class="questions__dropdown"> 
+                  <div class="questions__dropdown-content"> 
+                    <p class="questions__dropdown-text">Мы предоставляем займ клиентам с абсолютно любой кредитной историей, даже с очень плохой</p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions__item">
+                <h4 class="questions__item-title">Могу ли я досрочно закрыть займ? Например, через неделю?</h4>
+                <div class="questions__dropdown"> 
+                  <div class="questions__dropdown-content"> 
+                    <p class="questions__dropdown-text">Мы предоставляем займ клиентам с абсолютно любой кредитной историей, даже с очень плохой</p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions__item">
+                <h4 class="questions__item-title">Я работаю не официально, вы одобрите мне займ?</h4>
+                <div class="questions__dropdown"> 
+                  <div class="questions__dropdown-content"> 
+                    <p class="questions__dropdown-text">Мы предоставляем займ клиентам с абсолютно любой кредитной историей, даже с очень плохой</p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions__item">
+                <h4 class="questions__item-title">Можно ли оформить договор займа с электронным ПТС?</h4>
+                <div class="questions__dropdown"> 
+                  <div class="questions__dropdown-content"> 
+                    <p class="questions__dropdown-text">Мы предоставляем займ клиентам с абсолютно любой кредитной историей, даже с очень плохой</p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions__item">
+                <h4 class="questions__item-title">Можно ли увеличить заём, если нужны еще деньги?</h4>
+                <div class="questions__dropdown"> 
+                  <div class="questions__dropdown-content"> 
+                    <p class="questions__dropdown-text">Мы предоставляем займ клиентам с абсолютно любой кредитной историей, даже с очень плохой</p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions__item">
+                <h4 class="questions__item-title">У вас можно рефинансировать займ/кредит?</h4>
+                <div class="questions__dropdown"> 
+                  <div class="questions__dropdown-content"> 
+                    <p class="questions__dropdown-text">Мы предоставляем займ клиентам с абсолютно любой кредитной историей, даже с очень плохой</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="callback" id="callback">
+        <div class="container"> 
+          <div class="callback__wrap"> 
+            <div class="callback__info"> 
+              <div class="callback__info-map" id="map"> </div>
+              <div class="callback__info-contacts"> 
+                <h2 class="callback__info-title">Свяжитесь с нами</h2>
+                <ul class="callback__info-social"> 
+                  <li class="callback__info-social-item"> 
+                    <p class="callback__info-social-description">Телефон     </p><a class="callback__info-social-value" href="tel:84752642020">8 (4752) 642-020</a>
+                  </li>
+                  <li class="callback__info-social-item"> 
+                    <p class="callback__info-social-description">Адрес   </p>
+                    <address class="callback__info-social-value">г. Тамбов, ул Октябрьская, д. 47, офис 10</address>
+                  </li>
+                  <li class="callback__info-social-item"> 
+                    <p class="callback__info-social-description">E-mail     </p><a class="callback__info-social-value" href="mailto:avtolombard-narod@yandex.ru">avtolombard-narod@yandex.ru</a>
+                  </li>
+                  <li class="callback__info-social-item"> 
+                    <p class="callback__info-social-description">Соцсети     </p>
+                    <ul class="callback__info-social-networks">
+                      <li class="callback__info-social-icon"> <a class="callback__info-social-link viber" href="#"></a></li>
+                      <li class="callback__info-social-icon"><a class="callback__info-social-link whatsapp" href="#"></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <form class="callback__form" action="#" method="POST">
+              <fieldset class="callback__form-wrap"> 
+                <legend class="callback__form-title">Оставьте заявку</legend>
+                <ul class="callback__form-list"> 
+                  <li class="callback__form-item"> 
+                    <input class="input callback__form-input" type="text" placeholder="Имя">
+                  </li>
+                  <li class="callback__form-item"> 
+                    <input class="input callback__form-input" type="tel" placeholder="Телефон">
+                  </li>
+                </ul>
+                <ul class="callback__form-list"> 
+                  <li class="callback__form-item"> 
+                    <input class="input callback__form-input" type="text" placeholder="Марка авто">
+                  </li>
+                  <li class="callback__form-item"> 
+                    <input class="input callback__form-input" type="text" placeholder="Год выпуска авто">
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="callback__form-submit"> 
+                <button class="callback__form-button btn btn_blue" type="submit">Получить деньги</button>
+                <p class="callback__form-mark">Нажимая кнопку, вы соглашаетесь с<a href="agreement.html">правилами обработки персональных данных</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">  
+      <div class="container">
+        <div class="footer__wrap"> <small class="footer__copyright">©2021 - Автоломбард Народный</small>
+          <div class="footer__info"> 
+            <p class="footer__info-description">Входит в группу компаний</p><a class="footer__info-link" href="">
+              <picture> 
+                <source srcset="img/avtolombard-logo.webp" type="image/webp">
+                <source srcset="img/avtolombard-logo.png" type="image/png"><img src="img/avtolombard-logo.png" alt="">
+              </picture></a>
+          </div>
+          <div class="footer__autors"> 
+            <p class="footer__autors-description">Разработка сайта</p><a class="footer__autors-link" href="">
+              <svg class="footer__autors-logo">
+                <use xlink:href="img/sprites.svg#vedita"></use>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay"> 
+      <form class="modal" action="#" method="POST">
+        <fieldset class="modal__wrap"> 
+          <legend class="modal__title">Заказать обратный звонок</legend>
+          <button class="close" type="button"></button>
+          <ul class="modal__list"> 
+            <li class="modal__item"> 
+              <input class="input modal__input" type="tel" placeholder="Телефон">
+            </li>
+            <li class="modal__item"> 
+              <input class="input modal__input" type="text" placeholder="Имя">
+            </li>
+          </ul>
+          <div class="modal__submit"> 
+            <button class="modal__btn btn btn_blue" type="submit">Заказать звонок</button>
+            <p class="modal__mark">Нажимая кнопку, вы соглашаетесь с<a href="agreement.html">правилами обработки персональных данных</a></p>
+          </div>
+        </fieldset>
+      </form>
+    </div><a class="scroll-top" href="#">
+      <svg class="scroll-top__icon"> 
+        <use xlink:href="img/sprites.svg#arrow-top"></use>
+      </svg></a>
+    <script src="js/libs/jquery-3.6.0.min.js" defer> </script>
+    <script src="js/libs/nouislider.min.js" defer> </script>
+    <script src="js/libs/inputmask.min.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=&amp;lang=ru_RU" defer> </script>
+    <script src="js/main.js" defer> </script>
+  </body>
+</html>
