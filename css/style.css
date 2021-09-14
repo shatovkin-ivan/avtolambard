@@ -1544,6 +1544,48 @@ fieldset {
   color: var(--blue);
 }
 
+.modal__success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__success-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin-bottom: 24px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--blue);
+}
+
+.modal__success-icon {
+  width: 30px;
+  height: 20px;
+  fill: none;
+}
+
+.modal__success-text {
+  margin-bottom: 105px;
+  font-weight: 500;
+  text-align: center;
+}
+
 .close {
   position: absolute;
   top: 40px;

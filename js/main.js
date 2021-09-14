@@ -97,7 +97,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const opentModal = document.querySelectorAll('.open-modal'),
     overlay = document.querySelector('.overlay'),
     close = document.querySelector('.close'),
-    body = document.querySelector('body');
+    body = document.querySelector('body'),
+    successClose = document.querySelector('.modal__success-close');
     if (opentModal) {
         opentModal.forEach(currentModal => {
             currentModal.addEventListener('click', () => {
@@ -112,6 +113,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 if (e.target === overlay) {
                     closeModal();
                 }
+            })
+            successClose.addEventListener('click', () => {
+                closeModal();
             })
         })
     }
@@ -182,13 +186,6 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Добавление пробелов в значение калькулятора
-
-    // function addSpace() {
-
-    // }
-
-    
     // Функции калькулятора
 
     function getSum () {
