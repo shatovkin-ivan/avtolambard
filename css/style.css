@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/inter-regular-webfont.woff2") format("woff2"), url("../fonts/inter-regular-webfont.woff") format("woff");
+  src: url("../fonts/inter-regular-webfont.woff2") format("woff2"),url("../fonts/inter-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/inter-medium-webfont.woff2") format("woff2"), url("../fonts/inter-medium-webfont.woff") format("woff");
+  src: url("../fonts/inter-medium-webfont.woff2") format("woff2"),url("../fonts/inter-medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/inter-bold-webfont.woff2") format("woff2"), url("../fonts/inter-bold-webfont.woff") format("woff");
+  src: url("../fonts/inter-bold-webfont.woff2") format("woff2"),url("../fonts/inter-bold-webfont.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/inter-extrabold-webfont.woff2") format("woff2"), url("../fonts/inter-extrabold-webfont.woff") format("woff");
+  src: url("../fonts/inter-extrabold-webfont.woff2") format("woff2"),url("../fonts/inter-extrabold-webfont.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("../fonts/manrope-semibold-webfont.woff2") format("woff2"), url("../fonts/manrope-semibold-webfont.woff") format("woff");
+  src: url("../fonts/manrope-semibold-webfont.woff2") format("woff2"),url("../fonts/manrope-semibold-webfont.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("../fonts/manrope-bold-webfont.woff2") format("woff2"), url("../fonts/manrope-bold-webfont.woff") format("woff");
+  src: url("../fonts/manrope-bold-webfont.woff2") format("woff2"),url("../fonts/manrope-bold-webfont.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("../fonts/manrope-extrabold-webfont.woff2") format("woff2"), url("../fonts/manrope-extrabold-webfont.woff") format("woff");
+  src: url("../fonts/manrope-extrabold-webfont.woff2") format("woff2"),url("../fonts/manrope-extrabold-webfont.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -69,7 +69,7 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: .67em 0;
 }
 
 hr {
@@ -80,7 +80,7 @@ hr {
 }
 
 pre {
-  font-family: monospace, monospace;
+  font-family: monospace,monospace;
   font-size: 1em;
 }
 
@@ -103,7 +103,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace,monospace;
   font-size: 1em;
 }
 
@@ -175,7 +175,7 @@ button:-moz-focusring,
 }
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: .35em .75em .625em;
 }
 
 legend {
@@ -582,8 +582,8 @@ fieldset {
   border: 4px solid var(--blue);
   border-radius: 12px;
   background-color: var(--light-sand-color);
-  -webkit-box-shadow: 0px 2px 15px rgba(51, 51, 51, 0.15);
-          box-shadow: 0px 2px 15px rgba(51, 51, 51, 0.15);
+  -webkit-box-shadow: 0px 2px 15px rgba(51,51,51,.15);
+          box-shadow: 0px 2px 15px rgba(51,51,51,.15);
 }
 
 .calculator__forms {
@@ -939,8 +939,8 @@ fieldset {
   width: 88px;
   height: 88px;
   background-color: var(--light-sand-color);
-  -webkit-box-shadow: 0px 2px 15px rgba(51, 51, 51, 0.15);
-          box-shadow: 0px 2px 15px rgba(51, 51, 51, 0.15);
+  -webkit-box-shadow: 0px 2px 15px rgba(51,51,51,.15);
+          box-shadow: 0px 2px 15px rgba(51,51,51,.15);
 }
 
 .advantages__icon {
@@ -1109,8 +1109,8 @@ fieldset {
   max-width: 1252px;
   width: 100%;
   background-color: var(--white);
-  -webkit-box-shadow: 0px 2px 15px rgba(51, 51, 51, 0.15);
-          box-shadow: 0px 2px 15px rgba(51, 51, 51, 0.15);
+  -webkit-box-shadow: 0px 2px 15px rgba(51,51,51,.15);
+          box-shadow: 0px 2px 15px rgba(51,51,51,.15);
 }
 
 .arrange__form::before {
@@ -1233,9 +1233,9 @@ fieldset {
 .questions__dropdown {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: 0.3s max-height linear;
-  -o-transition: 0.3s max-height linear;
-  transition: 0.3s max-height linear;
+  -webkit-transition: .3s max-height linear;
+  -o-transition: .3s max-height linear;
+  transition: .3s max-height linear;
 }
 
 .questions__dropdown-content {
@@ -1473,7 +1473,7 @@ fieldset {
   padding: 15px;
   width: 100%;
   height: 100vh;
-  background-color: rgba(130, 130, 130, 0.55);
+  background-color: rgba(130,130,130,.55);
   z-index: 10;
 }
 
@@ -1488,8 +1488,8 @@ fieldset {
   border-radius: 12px;
   padding: 120px 70px 100px 70px;
   background-color: var(--white);
-  -webkit-box-shadow: 0px 2px 15px rgba(51, 51, 51, 0.15);
-          box-shadow: 0px 2px 15px rgba(51, 51, 51, 0.15);
+  -webkit-box-shadow: 0px 2px 15px rgba(51,51,51,.15);
+          box-shadow: 0px 2px 15px rgba(51,51,51,.15);
 }
 
 .modal__title {
@@ -1633,9 +1633,9 @@ fieldset {
 .scroll-top__icon {
   height: 32px;
   fill: var(--blue);
-  -webkit-transition: 0.3s fill linear;
-  -o-transition: 0.3s fill linear;
-  transition: 0.3s fill linear;
+  -webkit-transition: .3s fill linear;
+  -o-transition: .3s fill linear;
+  transition: .3s fill linear;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1716,11 +1716,11 @@ fieldset {
     padding: 56px 64px;
     margin-right: 0;
     background-color: var(--white);
-    -webkit-box-shadow: 0px 2px 15px rgba(51, 51, 51, 0.15);
-            box-shadow: 0px 2px 15px rgba(51, 51, 51, 0.15);
-    -webkit-transition: 0.3s right linear;
-    -o-transition: 0.3s right linear;
-    transition: 0.3s right linear;
+    -webkit-box-shadow: 0px 2px 15px rgba(51,51,51,.15);
+            box-shadow: 0px 2px 15px rgba(51,51,51,.15);
+    -webkit-transition: .3s right linear;
+    -o-transition: .3s right linear;
+    transition: .3s right linear;
   }
 
   .menu__list {
@@ -1776,11 +1776,9 @@ fieldset {
     width: 36px;
     height: 4px;
     background-color: var(--light-grey-blue-color);
-    -webkit-transition: 0.3s -webkit-transform linear;
-    transition: 0.3s -webkit-transform linear;
-    -o-transition: 0.3s transform linear;
-    transition: 0.3s transform linear;
-    transition: 0.3s transform linear, 0.3s -webkit-transform linear;
+    -webkit-transition: .3s transform linear;
+    -o-transition: .3s transform linear;
+    transition: .3s transform linear;
   }
 
   .burger__line::before {
