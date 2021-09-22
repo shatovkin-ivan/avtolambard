@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
         myMap.geoObjects.add(myPlacemark1);
     }
 
-    // Инициализация и настройам
+    // Инициализация и настройка range слайдеров
 
     const sumSlider = document.querySelector('#sum-slider');
     
@@ -152,6 +152,16 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    if (window.innerWidth <= 1200) {
+        menuLink = document.querySelectorAll('.menu__link');
+        
+        menuLink.forEach(currentMenuLink => {
+            currentMenuLink.addEventListener('click', () => {
+                closeMenu();
+            })
+        })
+    }
+
     // Якорные ссылки
 
     $('.anchor').on( 'click', function(){ 
@@ -195,6 +205,7 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+    
     function getTime () {
         if (timeSlider) {
             timeSlider.noUiSlider.on('update', function (values, handle) {
